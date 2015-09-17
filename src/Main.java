@@ -132,6 +132,7 @@ public class Main {
 //        OneParamFuncInterface<Integer, String> oi =  Main::getLength;
 
 
+
         Optional<Integer> min = Arrays.asList(6, 4, 6, 144, -23, 33, 56, -37, 76, 233).stream()
                 .filter(x -> x > 300)
                 .min(Integer::compare);
