@@ -50,15 +50,15 @@ public class Main {
 
 //        instance.doSmth(1, 1.34);
 
-        OneParamFuncInterface<Integer, String> instance = new OneParamFuncInterface<Integer, String>() {
-            @Override
-            public Integer doSmth(String s) {
-                return s.length();
-            }
-        };
+        OneParamFuncInterface<Integer, String> instance = Main::getLength;
 
 
         instance.doSmth("sddd");
     }
+
+    static Integer getLength(String str) {
+        return str.length();
+    }
+
 
 }
